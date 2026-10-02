@@ -1,6 +1,229 @@
-@font-face{font-family:RSVPScript;src:url('../fonts/ImperialScript-Regul.woff') format('woff');font-display:swap}
-#email-rsvp{box-sizing:border-box;background:#f9f0e0;color:#6c513f;padding:64px 26px 80px;text-align:center;font:17px/1.65 Ovo,Georgia,serif}#email-rsvp *{box-sizing:border-box}#email-rsvp .reply-card{max-width:440px;margin:auto;border:1px solid #a67d2b;outline:1px solid #a67d2b55;outline-offset:6px;border-radius:120px 120px 4px 4px;padding:48px 28px 40px}#email-rsvp .reply-kicker{font:10px/1.5 Cinzel,Georgia,serif;letter-spacing:.22em;text-transform:uppercase}#email-rsvp svg{width:42px;height:32px;display:block;margin:24px auto;color:#a67d2b}#email-rsvp h2{font:400 48px/1.15 RSVPScript,cursive;color:#a67d2b;margin:0 0 22px}#email-rsvp p{margin:0 auto 20px;max-width:320px}#email-rsvp .reply-deadline{font-size:14px;font-style:italic}#email-rsvp a{display:block;background:#6c513f;color:#fff!important;border:1px solid #6c513f;border-radius:30px;padding:15px 20px;margin:27px auto 17px;max-width:270px;font:11px/1.5 Cinzel,Georgia,serif;letter-spacing:.14em;text-decoration:none}#email-rsvp a:hover{background:#584031}#email-rsvp a:focus-visible{outline:3px solid #6c513f;outline-offset:5px}#email-rsvp .reply-help{font-size:12px;margin-bottom:0;max-width:260px}#email-rsvp [hidden]{display:none!important}@media(max-width:360px){#email-rsvp .reply-card{padding:44px 20px 32px}#email-rsvp h2{font-size:41px}}
+@font-face {
+  font-family: RSVPScript;
+  src: url('../fonts/ImperialScript-Regul.woff') format('woff');
+  font-display: swap;
+}
 
-#email-rsvp .rsvp-form{margin-top:30px;text-align:left}#email-rsvp .rsvp-form label{display:block;font-size:14px;line-height:1.5;margin:20px 0 8px}#email-rsvp .rsvp-form input,#email-rsvp .rsvp-form select{box-sizing:border-box;width:100%;min-width:0;min-height:48px;border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:4px;background:color-mix(in srgb,var(--paper) 75%,white);color:var(--ink);font:16px/1.5 Ovo,Georgia,serif;padding:12px}#email-rsvp .rsvp-form input::placeholder{color:var(--ink);opacity:.6}#email-rsvp .rsvp-form input:focus-visible,#email-rsvp .rsvp-form select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}#email-rsvp .rsvp-form small{display:block;font-size:12px;margin-top:6px}#email-rsvp .rsvp-form .rsvp-link{width:100%;cursor:pointer}#email-rsvp .rsvp-form .rsvp-help{text-align:center}#email-rsvp .rsvp-form [hidden]{display:none!important}
+#email-rsvp {
+  box-sizing: border-box;
+  background: #f9f0e0;
+  color: #6a5140;
+  padding: 30px 16px 60px;
+  text-align: center;
+  font-family: 'Ovo', Georgia, serif;
+}
 
-#email-rsvp{--accent:#6c513f;--ink:#6c513f;--paper:#f9f0e0}#email-rsvp .rsvp-link{display:block;border:1px solid #6c513f;background:#6c513f;color:white;border-radius:30px;padding:15px 18px;font:11px/1.5 Cinzel,Georgia,serif;letter-spacing:.1em;text-transform:uppercase;margin:27px auto 17px}#email-rsvp .rsvp-help{font-size:12px;margin-bottom:0}#email-rsvp button:focus-visible{outline:3px solid #6c513f;outline-offset:4px}
+#email-rsvp * {
+  box-sizing: border-box;
+}
+
+/* Outer decorative frame with rounded gold border matching Wedding Venues (Image 2) */
+#email-rsvp .reply-card-wrapper {
+  position: relative;
+  max-width: 355px;
+  width: 92vw;
+  margin: 36px auto 44px;
+  padding: 7px;
+  border-radius: 20px;
+  border: 1.5px solid #c49a50;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Top and bottom ornate flourishes matching Image 2 */
+#email-rsvp .rsvp-flourish {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  height: 42px;
+  max-width: 58%;
+  pointer-events: none;
+  z-index: 2;
+  object-fit: contain;
+}
+
+#email-rsvp .rsvp-flourish-top {
+  top: -23px;
+}
+
+#email-rsvp .rsvp-flourish-bottom {
+  bottom: -23px;
+}
+
+/* Inner cream card matching Wedding Venues */
+#email-rsvp .reply-card {
+  position: relative;
+  background: #f9f0e0;
+  border: 1px solid #d9c9a8;
+  border-radius: 14px;
+  padding: 24px 18px 24px;
+  box-shadow: 0 4px 14px rgba(166, 125, 43, 0.12);
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Header matching Wedding Venues style */
+#email-rsvp .reply-kicker {
+  display: block;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a67d2b;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(166, 125, 43, 0.3);
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+#email-rsvp h2 {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #5a0f1b;
+  margin: 0 0 6px;
+}
+
+#email-rsvp .reply-note {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #6a5140;
+  margin: 0 auto 12px;
+  max-width: 300px;
+}
+
+#email-rsvp .reply-deadline {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a67d2b;
+  margin: 0 0 12px;
+}
+
+/* Form Layout */
+#email-rsvp .rsvp-form {
+  margin-top: 10px;
+  text-align: left;
+}
+
+#email-rsvp .rsvp-form label {
+  display: block;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8c7666;
+  margin: 12px 0 4px;
+}
+
+#email-rsvp .rsvp-form input,
+#email-rsvp .rsvp-form select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  border: 1px solid #d9c9a8;
+  border-radius: 8px;
+  background: #fffdf9;
+  color: #5a0f1b;
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 14px;
+  padding: 10px 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#email-rsvp .rsvp-form input:focus-visible,
+#email-rsvp .rsvp-form select:focus-visible {
+  outline: 2px solid #a67d2b;
+  outline-offset: 1px;
+}
+
+#email-rsvp .rsvp-form input::placeholder {
+  color: #8c7666;
+  opacity: 0.7;
+}
+
+#email-rsvp .rsvp-form small {
+  display: block;
+  font-size: 11px;
+  color: #8c7666;
+  margin-top: 4px;
+  font-family: 'Ovo', Georgia, serif;
+}
+
+/* WhatsApp RSVP Action Button */
+#email-rsvp .rsvp-form .rsvp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 13px 20px;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 18px auto 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+  box-sizing: border-box;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+#email-rsvp .rsvp-form .rsvp-link:hover {
+  background: #20ba5a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+#email-rsvp .rsvp-form .rsvp-link:active {
+  transform: translateY(1px);
+}
+
+#email-rsvp .rsvp-form .rsvp-link:focus-visible {
+  outline: 3px solid #25D366;
+  outline-offset: 3px;
+}
+
+/* Helper Text */
+#email-rsvp .rsvp-form .rsvp-help {
+  font-family: 'Ovo', Georgia, serif;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #8c7666;
+  margin: 8px auto 2px;
+  text-align: center;
+  max-width: 300px;
+}
+
+#email-rsvp [hidden] {
+  display: none !important;
+}
+
+@media (max-width: 360px) {
+  #email-rsvp .reply-card-wrapper {
+    width: 95vw;
+    margin: 28px auto 36px;
+    padding: 5px;
+  }
+  #email-rsvp .reply-card {
+    padding: 20px 14px 20px;
+  }
+  #email-rsvp h2 {
+    font-size: 18px;
+  }
+  #email-rsvp .rsvp-form .rsvp-link {
+    font-size: 10px;
+    padding: 12px 14px;
+  }
+}
