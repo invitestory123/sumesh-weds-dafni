@@ -53,9 +53,6 @@ Replace files directly in `editable/assets/` or update `media` in `wedding-data.
 3. Keep ISO date strings with proper timezone offsets (e.g. `-04:00`).
 4. Validate changes with `node --check editable/wedding-data.js`.
 
-## Email RSVP
+## WhatsApp RSVP
 
-Set `rsvp.email` in `editable/wedding-data.js` to the host’s address; customize `heading`, `note`, and optional `deadline`. The ivory-and-gold RSVP card appears after guest details. Its form collects the guest name, attendance response and guest count before opening an email draft. Guests must send the email themselves. An empty or invalid address keeps the form in preview mode and explains that no reply has been sent. The standalone `editable/rsvp.css` and `editable/rsvp.js` provide this addition without changing bundled Tilda files.
-
-### RSVP form and sample venues
-All designs now collect **Your full name**, **Will you be joining us?** (Joyfully accepts / Regretfully declines), and **Number of guests attending — Including yourself**. Guest count is required only for acceptances; declines use zero. “Prepare RSVP email” opens the completed draft when `rsvp.email` is configured. With no email configured, the form remains available to preview and clearly states that no reply was sent. All designs use fictional sample venue names and addresses; replace these and the map link before sharing a real invitation.
+Set `rsvp.whatsapp` in `editable/wedding-data.js` to the host’s WhatsApp phone number (e.g. `"+919003349865"`). The ivory-and-gold RSVP card collects the guest full name, attendance response ("Joyfully accepts" / "Regretfully declines"), and guest count before opening WhatsApp with a beautifully formatted RSVP reply message. Guests only need to tap "Send" in WhatsApp to confirm. The standalone `editable/rsvp.css`, `editable/rsvp.js`, and `editable/rsvp-form.js` power this functionality.

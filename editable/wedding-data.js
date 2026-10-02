@@ -52,7 +52,8 @@ window.WEDDING_DATA = {
   },
 
   rsvp: {
-    email: "", // Add the host's email address to enable email RSVP.
+    whatsapp: "+919003349865",
+    phone: "+919003349865",
     heading: "With joy, we await your reply",
     note: "We would be honoured to have you with us. Kindly let us know if you can join our celebration.",
     deadline: "October 10, 2026",
