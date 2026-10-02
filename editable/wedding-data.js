@@ -17,7 +17,7 @@ window.WEDDING_DATA = {
   wedding: {
     dateLabel: "25.10.26",
     dateISO: "2026-10-25T16:00:00+05:30",
-    invitationNote: "Dear Family & Friends,<br />With immense joy and gratitude to God, we invite you to celebrate the Holy Matrimony of <strong>Sumesh S</strong> & <strong>Dafni John</strong> as we unite our lives in love and faith.",
+    invitationNote: "Dear Family & Friends,<br />With immense joy and gratitude to God, we invite you to celebrate the Holy Matrimony of <strong>Sumesh</strong> & <strong>Dafni</strong> as we unite our lives in love and faith.",
   },
 
   schedule: [

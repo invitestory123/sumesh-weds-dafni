@@ -99,25 +99,27 @@
   }
 }
 
-/* Remove all flower elements */
+/* Remove bouquet/vine flowers & corner floral frame (Image 1), while preserving Schedule rose */
 [data-elem-id="1780748451024000006"],
 [data-elem-id="1780142978273000001"],
 [data-elem-id="1780167075599000003"],
 [data-elem-id="1780167004386000002"],
-[data-elem-id="1773602024985"],
 [data-elem-id="1779531257276000001"],
+[data-elem-id="1780144694093"],
+[data-elem-id="1780166531595"],
 .tn-elem[data-elem-id="1780748451024000006"],
 .tn-elem[data-elem-id="1780142978273000001"],
 .tn-elem[data-elem-id="1780167075599000003"],
 .tn-elem[data-elem-id="1780167004386000002"],
-.tn-elem[data-elem-id="1773602024985"],
 .tn-elem[data-elem-id="1779531257276000001"],
+.tn-elem[data-elem-id="1780144694093"],
+.tn-elem[data-elem-id="1780166531595"],
 img[src*="noroot_2.png"],
 img[src*="noroot_3.png"],
 img[src*="noroot_10.png"],
 img[src*="noroot_14.png"],
-img[src*="rose_-_Copy.png"],
-img[src*="rose_-_Copy_1.png"] {
+img[src*="623915249_2629494717_1.png"],
+img[src*="623915249_2629494717_4.png"] {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
