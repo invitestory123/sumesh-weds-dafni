@@ -60,6 +60,7 @@ window.WEDDING_DATA = {
   },
 
   media: {
+    ogImage: "./editable/assets/og-image.jpg",
     overlayImage: "./editable/assets/ChatGPT Image Jun 23, 2026, 04_40_29 PM.png",
     sealVideo: "./editable/assets/1782224012851.mp4",
     heroVideo: "./editable/assets/Swans2.mov",
