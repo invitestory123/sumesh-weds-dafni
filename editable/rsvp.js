@@ -11,7 +11,6 @@
     <div class="reply-card-wrapper">
       <img src="images/cdn/noroot_6.png" class="rsvp-flourish rsvp-flourish-top" alt="" aria-hidden="true" />
       <div class="reply-card">
-        <div class="reply-kicker">Wedding RSVP</div>
         <h2 id="reply-title"></h2>
         <p class="reply-note"></p>
         <p class="reply-deadline" hidden></p>
@@ -31,7 +30,7 @@
 
   const form = section.querySelector('form');
   if (typeof window.initWeddingRSVP === 'function') {
-    window.initWeddingRSVP(form, rsvp, `${data.couple?.groom || 'Sumesh'} & ${data.couple?.bride || 'Dafni'}`);
+    window.initWeddingRSVP(form, rsvp, `${data.couple?.groom || 'Sumesh S'} & ${data.couple?.bride || 'Dafni John'}`);
   }
 
   (document.getElementById('allrecords') || document.body).appendChild(section);

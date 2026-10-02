@@ -1,4 +1,4 @@
-# Customer Editing Guide — Sumesh & Dafni Wedding Invitation
+# Customer Editing Guide — Sumesh S & Dafni John Wedding Invitation
 
 This invitation is an ivory and gold luxury wedding invitation featuring an interactive wax-seal envelope overlay, opening animation video, ambient background video, romantic background soundtrack ("Anbil Avan" from Vinnaithaandi Varuvaayaa), live countdown timer, schedule of events, venue details with dual Google Maps links, and RSVP.
 
@@ -11,8 +11,8 @@ All routine customer edits are configured in:
 
 ### Couple Information
 Edit `couple` in `editable/wedding-data.js`:
-- `groom`: "Sumesh" (Full: `Er. Sumesh Sundararaj, M.Tech., M.S. (USA)`)
-- `bride`: "Dafni" (Full: `Dr. Dafni John, MBBS., MD.`)
+- `groom`: "Sumesh S" (Full: `Er. Sumesh Sundararaj, M.Tech., M.S. (USA)`)
+- `bride`: "Dafni John" (Full: `Dr. Dafni John, MBBS., MD.`)
 - `subtitle`: Spiritual tagline / wedding subtitle
 
 ### Wedding Date & Invitation Note

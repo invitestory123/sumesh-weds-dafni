@@ -5,8 +5,8 @@
 
 window.WEDDING_DATA = {
   couple: {
-    groom: "Sumesh",
-    bride: "Dafni",
+    groom: "Sumesh S",
+    bride: "Dafni John",
     groomFull: "Er. Sumesh Sundararaj, M.Tech., M.S. (USA)",
     groomRole: "Data Analyst, Regions Bank, Alabama, USA",
     brideFull: "Dr. Dafni John, MBBS., MD.",
@@ -17,7 +17,7 @@ window.WEDDING_DATA = {
   wedding: {
     dateLabel: "25.10.26",
     dateISO: "2026-10-25T16:00:00+05:30",
-    invitationNote: "Dear Family & Friends,<br />With immense joy and gratitude to God, we invite you to celebrate the Holy Matrimony of <strong>Sumesh</strong> & <strong>Dafni</strong> as we unite our lives in love and faith.",
+    invitationNote: "Dear Family & Friends,<br />With immense joy and gratitude to God, we invite you to celebrate the Holy Matrimony of <strong>Sumesh S</strong> & <strong>Dafni John</strong> as we unite our lives in love and faith.",
   },
 
   schedule: [
@@ -56,7 +56,7 @@ window.WEDDING_DATA = {
     phone: "+919003349865",
     heading: "With joy, we await your reply",
     note: "We would be honoured to have you with us. Kindly let us know if you can join our celebration.",
-    deadline: "October 10, 2026",
+    deadline: "October 20, 2026",
   },
 
   media: {
