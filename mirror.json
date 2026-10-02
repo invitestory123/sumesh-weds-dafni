@@ -1,0 +1,32 @@
+{
+  "name": "wax-seal-royale",
+  "tier": "luxury",
+  "source": "https://wax-seal-royale.invitestory.in/",
+  "downloaded_files": 66,
+  "downloaded_bytes": 24681889,
+  "failures": [
+    {
+      "url": "https://wax-seal-royale.invitestory.in/images/cdn/apple-touch-icon_1.png",
+      "error": "could not download https://wax-seal-royale.invitestory.in/images/cdn/apple-touch-icon_1.png: HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://wax-seal-royale.invitestory.in/images/cdn/favicon-dark_1.png",
+      "error": "could not download https://wax-seal-royale.invitestory.in/images/cdn/favicon-dark_1.png: HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://wax-seal-royale.invitestory.in/images/cdn/favicon-light_1.png",
+      "error": "could not download https://wax-seal-royale.invitestory.in/images/cdn/favicon-light_1.png: HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://wax-seal-royale.invitestory.in/images/cdn/favicon_1.svg",
+      "error": "could not download https://wax-seal-royale.invitestory.in/images/cdn/favicon_1.svg: HTTP Error 404: Not Found"
+    }
+  ],
+  "repairs": [
+    {
+      "source_urls": "https://wax-seal-royale.invitestory.in/images/cdn/apple-touch-icon_1.png, https://wax-seal-royale.invitestory.in/images/cdn/favicon-dark_1.png, https://wax-seal-royale.invitestory.in/images/cdn/favicon-light_1.png, https://wax-seal-royale.invitestory.in/images/cdn/favicon_1.svg",
+      "fallback": "images/cdn/local-favicon.svg"
+    }
+  ],
+  "unresolved_failures": []
+}
