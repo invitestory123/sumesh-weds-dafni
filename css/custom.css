@@ -125,3 +125,33 @@ img[src*="623915249_2629494717_4.png"] {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* Schedule Section - Timeline Rose & Layering Fix */
+#rec2487446103 .tn-elem[data-elem-id="1779527691672"],
+#rec2487446103 .tn-elem[data-elem-id="1782315340571000001"] {
+  z-index: 1 !important;
+}
+
+#rec2487446103 .tn-elem[data-elem-id="1772803124037"] {
+  z-index: 2 !important;
+}
+
+#rec2487446103 .tn-elem[data-elem-id="1772803196067"],
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000004"],
+#rec2487446103 .tn-elem[data-elem-id="1772803465944000007"],
+#rec2487446103 .tn-elem[data-elem-id="1778517704423000003"],
+#rec2487446103 .tn-elem[data-elem-id="1772803619332000010"] {
+  z-index: 2 !important;
+}
+
+#rec2487446103 .tn-elem[data-elem-id="1773602024985"] {
+  z-index: 10 !important;
+  opacity: 1 !important;
+  pointer-events: none !important;
+}
+
+#rec2487446103 .tn-elem[data-elem-id="1773602024985"] .tn-atom,
+#rec2487446103 .tn-elem[data-elem-id="1773602024985"] .tn-atom__sbs-anim-wrapper {
+  z-index: 10 !important;
+}
+
